@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: price-watch
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/pricewatch}
+    username: ${DB_USER:pricewatch}
+    password: ${DB_PASSWORD:pricewatch}
+  flyway:
+    enabled: true
+
+server:
+  port: ${SERVER_PORT:8080}
+
+pricewatch:
+  # Identifies this process in logs and, from M2, in job claims.
+  instance-id: ${INSTANCE_ID:${random.uuid}}
+  http:
+    user-agent: "PriceWatch/0.1 (+personal use; respects robots.txt)"
+    connect-timeout: 5s
+    read-timeout: 10s
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %-5level [${pricewatch.instance-id:-?}] %logger{20} - %msg%n"
