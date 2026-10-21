@@ -1,6 +1,6 @@
-<div align="center">
 
-<img src="docs/assets/banner.svg" alt="Price Watch: a distributed scheduler that tells you exactly once when something changes" width="100%">
+
+<img width="1280" height="360" alt="banner" src="https://github.com/user-attachments/assets/30342a01-2619-438d-986f-6a233832f1c7" />
 
 <br>
 
@@ -27,7 +27,7 @@ Under the hood it's a **distributed job scheduler with exactly-once delivery**, 
 <img src="docs/assets/price-history.svg" alt="30-day price history with one alert and two failed polls shown as gaps" width="100%">
 </td>
 <td width="45%" valign="middle" align="center">
-<img src="docs/assets/notification.svg" alt="One notification on a phone lock screen" width="88%">
+!<img width="420" height="340" alt="notification" src="https://github.com/user-attachments/assets/40980729-2686-4d8d-8189-f2fd73c90665" /><div align="center">
 </td>
 </tr>
 <tr>
