@@ -1,50 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-label="Price Watch: a distributed scheduler with exactly-once alerting">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1220"/>
-      <stop offset="1" stop-color="#111c33"/>
-    </linearGradient>
-    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
-    </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="1"/>
-    </pattern>
-  </defs>
-
-  <rect width="1280" height="360" rx="18" fill="url(#bg)"/>
-  <rect x="700" y="40" width="540" height="280" rx="14" fill="url(#grid)" opacity="0.7"/>
-
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
-    <text x="64" y="118" font-size="64" font-weight="700" fill="#f8fafc" letter-spacing="-1.5">Price Watch</text>
-    <text x="66" y="166" font-size="23" fill="#94a3b8">A distributed scheduler that watches things</text>
-    <text x="66" y="198" font-size="23" fill="#94a3b8">and tells you <tspan fill="#38bdf8" font-weight="600">exactly once</tspan> when something changes.</text>
-
-    <g font-size="15" font-weight="600">
-      <rect x="66" y="240" width="150" height="34" rx="17" fill="#0c4a6e"/>
-      <text x="141" y="262" text-anchor="middle" fill="#7dd3fc">job claiming</text>
-      <rect x="228" y="240" width="168" height="34" rx="17" fill="#14532d"/>
-      <text x="312" y="262" text-anchor="middle" fill="#86efac">outbox delivery</text>
-      <rect x="408" y="240" width="170" height="34" rx="17" fill="#4c1d95"/>
-      <text x="493" y="262" text-anchor="middle" fill="#c4b5fd">crash recovery</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-labelledby="title desc">
+  <title id="title">Price Watch</title>
+  <desc id="desc">A clean product banner showing a price threshold crossed once and one alert sent.</desc>
+  <rect width="1280" height="360" rx="16" fill="#f7f8fa"/>
+  <path d="M0 16Q0 0 16 0H1264Q1280 0 1280 16V344Q1280 360 1264 360H16Q0 360 0 344Z" fill="#f7f8fa"/>
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <rect x="56" y="52" width="36" height="36" rx="10" fill="#17191c"/>
+    <path d="M65 76L72 67L78 71L84 61" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="106" y="76" font-size="17" font-weight="650" fill="#17191c">Price Watch</text>
+    <text x="56" y="145" font-size="48" font-weight="650" letter-spacing="-1.8" fill="#17191c">Know when the price changes.</text>
+    <text x="58" y="181" font-size="19" fill="#666d78">Reliable monitoring. One alert when your threshold is crossed.</text>
+    <g font-size="13.5" font-weight="550">
+      <circle cx="64" cy="226" r="4" fill="#267653"/>
+      <text x="77" y="231" fill="#424852">Scheduled checks</text>
+      <circle cx="226" cy="226" r="4" fill="#267653"/>
+      <text x="239" y="231" fill="#424852">Exactly-once alerts</text>
+      <circle cx="405" cy="226" r="4" fill="#267653"/>
+      <text x="418" y="231" fill="#424852">Crash recovery</text>
     </g>
-
-    <!-- mini chart: price crosses the threshold once, one alert, later dips are silent -->
-    <line x1="730" y1="200" x2="1210" y2="200" stroke="#f59e0b" stroke-width="2" stroke-dasharray="7 6"/>
-    <text x="1210" y="190" text-anchor="end" font-size="14" fill="#fbbf24">threshold</text>
-
-    <path d="M760 120 L800 135 L840 110 L880 150 L920 170 L960 215 L1000 205 L1040 225 L1080 195 L1120 210 L1160 230 L1200 220 L1200 300 L760 300 Z" fill="url(#area)"/>
-    <path d="M760 120 L800 135 L840 110 L880 150 L920 170 L960 215 L1000 205 L1040 225 L1080 195 L1120 210 L1160 230 L1200 220" fill="none" stroke="#38bdf8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
-
-    <circle cx="947" cy="200" r="15" fill="#f59e0b" opacity="0.25"/>
-    <circle cx="947" cy="200" r="7" fill="#f59e0b"/>
-    <rect x="890" y="72" width="114" height="32" rx="8" fill="#f59e0b"/>
-    <text x="947" y="93" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">1 alert sent</text>
-    <line x1="947" y1="104" x2="947" y2="186" stroke="#f59e0b" stroke-width="1.5"/>
-
-    <circle cx="1092" cy="200" r="5" fill="none" stroke="#64748b" stroke-width="2"/>
-    <text x="1092" y="268" text-anchor="middle" font-size="13" fill="#64748b">re-cross: silent</text>
-    <line x1="1092" y1="207" x2="1092" y2="252" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/>
+    <text x="58" y="307" font-size="12" font-weight="600" letter-spacing="1.5" fill="#8a9099">PRICE EVENT</text>
+    <text x="58" y="331" font-size="15" fill="#17191c">£84.99 <tspan fill="#9298a1">→</tspan> <tspan font-weight="650" fill="#267653">£77.49</tspan></text>
+  </g>
+  <g>
+    <rect x="716" y="36" width="508" height="288" rx="12" fill="#fff" stroke="#e5e7eb"/>
+    <text x="744" y="68" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="650" letter-spacing="1.2" fill="#858b95">PRICE HISTORY</text>
+    <text x="744" y="99" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="650" fill="#17191c">£77.49</text>
+    <text x="854" y="98" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#267653">−8.8%</text>
+    <g stroke="#eef0f2" stroke-width="1">
+      <line x1="744" y1="130" x2="1196" y2="130"/>
+      <line x1="744" y1="170" x2="1196" y2="170"/>
+      <line x1="744" y1="210" x2="1196" y2="210"/>
+      <line x1="744" y1="250" x2="1196" y2="250"/>
+    </g>
+    <line x1="744" y1="170" x2="1196" y2="170" stroke="#c68b35" stroke-width="1.5" stroke-dasharray="4 5"/>
+    <text x="1194" y="160" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#a36e20">£79.99 target</text>
+    <path d="M750 142 L790 148 L830 138 L870 161 L910 166 L950 198 L990 188 L1030 217 L1070 205 L1110 238 L1150 244 L1190 255" fill="none" stroke="#267653" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1190" cy="255" r="4.5" fill="#267653" stroke="#fff" stroke-width="2"/>
+    <rect x="1032" y="270" width="164" height="34" rx="7" fill="#eef6f0"/>
+    <circle cx="1048" cy="287" r="3.5" fill="#267653"/>
+    <text x="1058" y="291" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#245c40">1 alert sent</text>
   </g>
 </svg>
